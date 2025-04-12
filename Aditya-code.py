@@ -37,6 +37,6 @@ def search_genius_song(query):
     else:
         print(f"Error: {response.status_code} - {response.text}")
 
-# Example usage
+
 search_genius_song("Power Kanye West")
 create_db()

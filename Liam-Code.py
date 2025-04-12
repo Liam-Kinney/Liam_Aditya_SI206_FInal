@@ -5,22 +5,22 @@ import random
 import matplotlib.pyplot as plt
 import re
 
-API_KEY = "08d3b443588c0efe5d7803f6c8b91630"
-BASE_URL = "http://ws.audioscrobbler.com/2.0/"
+API_KEY_LastFM = "08d3b443588c0efe5d7803f6c8b91630"
+BASE_URL_LastFM = "http://ws.audioscrobbler.com/2.0/"
 
 top_genres = ["pop", "rock", "hip-hop", "jazz", "classical", "country", "electronic", "alternative", "blues", "metal", "anime", "indie", "folk", "reggae", "r&b", "rap", "house", "soul", "funk", "k-pop", "emo", "grunge", "techno"]
 genre_re_pattern = re.compile(r'\b(?:' + '|'.join(top_genres) + r')\b', re.IGNORECASE)
 
 
-def get_tracks_from_page(page):
+def get_tracks_from_page(page):  #gets tracks from a specific page in the api
     params = {
         "method": "chart.gettoptracks",
-        "api_key": API_KEY,
+        "api_key": API_KEY_LastFM,
         "format": "json",
         "limit": 100,
         "page": page
     }
-    response = requests.get(BASE_URL, params = params)
+    response = requests.get(BASE_URL_LastFM, params = params)
     data = response.json()
 
     track_list = []
@@ -31,7 +31,7 @@ def get_tracks_from_page(page):
 
     return track_list
 
-def get_top_1050_tracks():
+def get_top_1050_tracks(): ##calls the function above to read several pages until getting to 1050 tracks
     top_1050_tracks = []
     for page in range(1, 13):
         tracks = get_tracks_from_page(page)
@@ -45,15 +45,15 @@ def get_genre(tags):
             return match.group(0).lower()
     return "unknown"
 
-def get_track_info(artist, track):
+def get_track_info(artist, track): ##returns info from Last.FM api
     params = {
         "method": "track.getInfo",
-        "api_key": API_KEY,
+        "api_key": API_KEY_LastFM,
         "artist": artist,
         "track": track,
         "format": "json"
     }
-    response = requests.get(BASE_URL, params=params)
+    response = requests.get(BASE_URL_LastFM, params=params)
     data = response.json()
 
     if "track" not in data:
@@ -69,7 +69,8 @@ def get_track_info(artist, track):
 
 
 
-track_list = get_top_1050_tracks()
+
+track_list = get_top_1050_tracks()  ##calling function to get a list of 1050 tracks
 
 random.shuffle(track_list)
 
@@ -88,8 +89,8 @@ cur.execute('''
 
 num_inserted = 0
 
-for artist, track in track_list:
-    if num_inserted >= 25:
+for artist, track in track_list: ##Looping to add tracks to the database
+    if num_inserted >= 25: ##limits the data base additions to 25 elements
         break
     info = get_track_info(artist, track)
     if info:
@@ -100,24 +101,6 @@ for artist, track in track_list:
 conn.commit()
 conn.close()
 
-conn = sqlite3.connect("tracks.db")
-cur = conn.cursor()
 
-cur.execute('''
-    SELECT genre, AVG(playcount) FROM tracks WHERE genre != 'unknown'
-    GROUP BY genre HAVING COUNT(*) >= 5 ORDER BY AVG(playcount) DESC
-''')
 
-results = cur.fetchall()
-conn.close()
 
-genres = [row[0].title() for row in results]
-avg_playcounts = [row[1] for row in results]
-
-plt.figure(figsize=(10, 6))
-plt.scatter(avg_playcounts, genres, s = 100)
-plt.ylabel("Genre")
-plt.xlabel("Average Playcount (in millions)")
-plt.title("Average Playcounts by Genre")
-plt.grid(axis = 'x', linestyle = '--', alpha = 0.7)
-plt.show()
