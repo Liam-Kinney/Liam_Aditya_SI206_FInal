@@ -2,6 +2,8 @@ import requests
 import sqlite3
 import json
 import random
+import spotipy
+from spotipy import spotipy
 from requests.auth import HTTPBasicAuth
 
 CLIENT_ID = "517c3756591244359ba33301aae3b33e"
