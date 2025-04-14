@@ -1,42 +1,46 @@
 import requests
 import sqlite3
+import json
+import random
+from requests.auth import HTTPBasicAuth
 
-GENIUS_API_TOKEN = "hKlKBCGgU-bxN-yq3rUi9-4CxuiTeB_VSQ7rSjSO3YvptIZjz21cUh2QomTL4Ulo"
+CLIENT_ID = "517c3756591244359ba33301aae3b33e"
+CLIENT_SECRET = "5ea0dfd004c546ddbf14bb09c0dc6acb"
+auth_url = "https://accounts.spotify.com/api/token"
+credentials = { 'grant_type' : 'client_credentials', 'client_id' : CLIENT_ID, 'client_secret': CLIENT_SECRET,}
+auth_response = requests.post(auth_url, data=credentials)
+access_token = auth_response.json().get('access_token')
 
-def create_db():
-    conn = sqlite3.connect("genius_songs.db")
-    cursor = conn.cursor()
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS songs (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            title TEXT,
-            artist TEXT,
-            genius_url TEXT
-        )
-    """)
-    conn.commit()
-    conn.close()
-
-def search_genius_song(query):
-    base_url = "https://api.genius.com/search"
-    headers = {
-        "Authorization": f"Bearer {GENIUS_API_TOKEN}"
-    }
+def search_track(track_name):
+    url = "https://api.spotify.com/v1/search"
     params = {
-        "q": query
+        "q": track_name,
+        "type": "track",
+        "limit": 1 
     }
+    response = requests.get(url, headers=credentials, params=params)
+    tracks = response.json().get("tracks", {}).get("items", [])
+    return tracks[0]
 
-    response = requests.get(base_url, headers=headers, params=params)
-    
-    if response.status_code == 200:
-        results = response.json()["response"]["hits"]
-        for hit in results:
-            title = hit["result"]["full_title"]
-            url = hit["result"]["url"]
-            print(f"{title} - {url}")
-    else:
-        print(f"Error: {response.status_code} - {response.text}")
+def get_track_details(track_name):
+    track_data = search_track(track_name)
+    track_info = {
+        "title": track_data["name"],
+        "artists": [artist["name"] for artist in track_data["artists"]],
+        "duration_ms": track_data["duration_ms"],
+        "popularity": track_data["popularity"],
+        "track_id": track_data["id"]
+    }
+    if track_data["artists"]:
+        artist_id = track_data["artists"][0]["id"]
+        artist_url = f"https://api.spotify.com/v1/artists/{artist_id}"
+        artist_response = requests.get(artist_url, headers=credentials)
+        artist_data = artist_response.json()
+        track_info["genres"] = artist_data.get("genres", [])
+    return track_info
 
-
-search_genius_song("Power Kanye West")
-create_db()
+def get_artist_genres(artist_id):
+    url = f"https://api.spotify.com/v1/artists/{artist_id}"
+    response = requests.get(url, headers={"Authorization": f"Bearer{access_token}"})
+    artist_data = response.json()
+    return artist_data.get("genres", [])
