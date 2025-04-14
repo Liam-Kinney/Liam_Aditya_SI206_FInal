@@ -29,3 +29,8 @@ def return_song_length(track_uri):
     test1 = search_track_uri("Everything I Am", "Kanye West")
     result = spotify.track(test1, None)
     return(result["duration_ms"]/60000)
+
+def return_by_name(track_name, artist_name=None, limit=1):
+    get_track_uri = search_track_uri(track_name, artist_name=None, limit=1)
+    get_length = return_song_length(get_track_uri)
+    return (track_name, get_length)
