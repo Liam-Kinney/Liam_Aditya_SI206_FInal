@@ -67,9 +67,6 @@ def get_track_info(artist, track): ##returns info from Last.FM api
     genre = get_genre(tags)
     return (name, artist, playcount, genre)
 
-
-
-
 track_list = get_top_1050_tracks()  ##calling function to get a list of 1050 tracks
 
 random.shuffle(track_list)
