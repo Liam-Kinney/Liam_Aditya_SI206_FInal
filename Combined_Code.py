@@ -1,3 +1,4 @@
+import json
 import requests
 import sqlite3
 import random
@@ -167,6 +168,19 @@ cur.execute('''
     FROM tracks t
     JOIN track_lengths l ON t.artist = l.artist AND t.title = l.track_name
     ''')
+
+conn.commit()
+cur.execute("SELECT * FROM combined_tracks")
+rows = cur.fetchall()
+
+tracks_data = []
+columns = [desc[0] for desc in cur.description]
+for row in rows:
+    tracks_data.append(dict(zip(columns, row)))
+
+# Write to JSON file
+with open("tracks.json", 'w', encoding='utf-8') as f:
+    json.dump(tracks_data, f, indent=4, ensure_ascii=False)
 
 conn.commit()
 conn.close()
