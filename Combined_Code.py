@@ -15,7 +15,7 @@ spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(cl
 top_genres = ["pop", "rock", "hip-hop", "jazz", "classical", "country", "electronic", "alternative", "blues", "metal", "anime", "indie", "folk", "reggae", "r&b", "rap", "house", "soul", "funk", "k-pop", "emo", "grunge", "techno"]
 genre_re_pattern = re.compile(r'\b(?:' + '|'.join(top_genres) + r')\b', re.IGNORECASE)
 
-def search_track_uri(track_name, artist_name=None, limit=1):
+def search_track_uri(track_name, artist_name, limit=1):
     """Search for a track and return its URI"""
     if artist_name:
         query = f"track:{track_name} artist:{artist_name}"
@@ -30,8 +30,7 @@ def search_track_uri(track_name, artist_name=None, limit=1):
         return None
     
 def return_song_length(track_uri):
-    test1 = search_track_uri(track_uri)
-    result = spotify.track(test1, None)
+    result = spotify.track(track_uri, None)
     return(result["duration_ms"]/60000)
 
 def get_tracks_from_page(page):  #gets tracks from a specific page in the api
@@ -94,11 +93,11 @@ track_list = get_top_1050_tracks()  ##calling function to get a list of 1050 tra
 random.shuffle(track_list)
 
 
-def search_25_track_lengths(track_list):
+def search_100_track_lengths(track_list):
     count = 0
     track_length_tuple_list = []
-    while count < 25:
-        track_uri = search_track_uri(track_list[count])
+    while count < 100:
+        track_uri = search_track_uri(track_list[count][1], track_list[count][0])
 
         if track_uri is None:
             print("Track not found")
@@ -108,7 +107,7 @@ def search_25_track_lengths(track_list):
             count += 1
     return track_length_tuple_list    
 
-print(search_25_track_lengths(track_list))
+track_length_tuple_list = search_100_track_lengths(track_list)
 conn = sqlite3.connect("tracks.db")
 cur = conn.cursor()
 
@@ -138,6 +137,39 @@ conn.close()
 
 conn = sqlite3.connect("tracks.db")
 cur = conn.cursor()
+
+cur.execute('''
+    CREATE TABLE IF NOT EXISTS track_lengths(
+        artist TEXT,
+        track_name TEXT,
+        length_minutes REAL,
+        PRIMARY KEY (artist, track_name)
+        )
+    '''
+)
+
+for artist, track_name, length in track_length_tuple_list:
+    cur.execute('''
+        INSERT OR IGNORE INTO track_lengths(artist, track_name, length_minutes) VALUES (?, ?, ?)''', 
+        (artist, track_name, length))
+
+conn.commit()
+conn.close()
+
+conn = sqlite3.connect("tracks.db")
+cur = conn.cursor()
+
+cur.execute('Drop TABLE IF EXISTS combined_tracks')
+
+cur.execute('''
+    CREATE TABLE combined_tracks AS
+    SELECT t.title, t.artist, t.playcount, t.genre, l.length_minutes
+    FROM tracks t
+    JOIN track_lengths l ON t.artist = l.artist AND t.title = l.track_name
+    ''')
+
+conn.commit()
+conn.close()
 
 
 

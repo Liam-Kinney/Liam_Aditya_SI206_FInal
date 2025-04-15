@@ -5,8 +5,8 @@ conn = sqlite3.connect("tracks.db")
 cur = conn.cursor()
 
 cur.execute('''
-    SELECT genre, AVE(playcount) FROM tracks WHERE genre != 'unknown'
-    GROUP BY genre ORDER BY AVG(playcount) DESC
+    SELECT genre, AVG(playcount) FROM tracks WHERE genre != 'unknown'
+    GROUP BY genre  HAVING COUNT(*) >= 5 ORDER BY AVG(playcount) DESC 
 ''')
 
 results = cur.fetchall()
