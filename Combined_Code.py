@@ -1,17 +1,38 @@
 import requests
 import sqlite3
 import random
-import matplotlib.pyplot as plt
-import re
 import spotipy
 import spotipy.util as util
+from json.decoder import JSONDecodeError
+from requests.auth import HTTPBasicAuth
+from spotipy.oauth2 import SpotifyClientCredentials
+import re
 
 API_KEY_LastFM = "08d3b443588c0efe5d7803f6c8b91630"
 BASE_URL_LastFM = "http://ws.audioscrobbler.com/2.0/"
+spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(client_id="517c3756591244359ba33301aae3b33e", client_secret="eb9adf060d27438482d2f403715127cf"))
 
 top_genres = ["pop", "rock", "hip-hop", "jazz", "classical", "country", "electronic", "alternative", "blues", "metal", "anime", "indie", "folk", "reggae", "r&b", "rap", "house", "soul", "funk", "k-pop", "emo", "grunge", "techno"]
 genre_re_pattern = re.compile(r'\b(?:' + '|'.join(top_genres) + r')\b', re.IGNORECASE)
 
+def search_track_uri(track_name, artist_name=None, limit=1):
+    """Search for a track and return its URI"""
+    if artist_name:
+        query = f"track:{track_name} artist:{artist_name}"
+    else:
+        query = track_name
+    
+    results = spotify.search(q=query, type='track', limit=limit)
+    
+    if results['tracks']['items']:
+        return results['tracks']['items'][0]['uri']
+    else:
+        return None
+    
+def return_song_length(track_uri):
+    test1 = search_track_uri(track_uri)
+    result = spotify.track(test1, None)
+    return(result["duration_ms"]/60000)
 
 def get_tracks_from_page(page):  #gets tracks from a specific page in the api
     params = {
@@ -72,6 +93,22 @@ track_list = get_top_1050_tracks()  ##calling function to get a list of 1050 tra
 
 random.shuffle(track_list)
 
+
+def search_25_track_lengths(track_list):
+    count = 0
+    track_length_tuple_list = []
+    while count < 25:
+        track_uri = search_track_uri(track_list[count])
+
+        if track_uri is None:
+            print("Track not found")
+            count += 1
+        else:
+            track_length_tuple_list.append((track_list[count][0], track_list[count][1], return_song_length(track_uri)))
+            count += 1
+    return track_length_tuple_list    
+
+print(search_25_track_lengths(track_list))
 conn = sqlite3.connect("tracks.db")
 cur = conn.cursor()
 
@@ -98,6 +135,9 @@ for artist, track in track_list: ##Looping to add tracks to the database
 
 conn.commit()
 conn.close()
+
+conn = sqlite3.connect("tracks.db")
+cur = conn.cursor()
 
 
 
