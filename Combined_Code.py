@@ -114,11 +114,12 @@ cur = conn.cursor()
 
 cur.execute('''
     CREATE TABLE IF NOT EXISTS tracks(
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
         title TEXT,
         artist TEXT,
         playcount INTEGER,
         genre TEXT,
-        PRIMARY KEY (title, artist)
+        CONSTRAINT unique_track UNIQUE(title, artist)
         )
 ''')
 
@@ -141,18 +142,19 @@ cur = conn.cursor()
 
 cur.execute('''
     CREATE TABLE IF NOT EXISTS track_lengths(
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        title TEXT,
         artist TEXT,
-        track_name TEXT,
         length_minutes REAL,
-        PRIMARY KEY (artist, track_name)
+        CONSTRAINT unique_track UNIQUE(title, artist)
         )
     '''
 )
 
 for artist, track_name, length in track_length_tuple_list:
     cur.execute('''
-        INSERT OR IGNORE INTO track_lengths(artist, track_name, length_minutes) VALUES (?, ?, ?)''', 
-        (artist, track_name, length))
+        INSERT OR IGNORE INTO track_lengths(title, artist, length_minutes) VALUES (?, ?, ?)''', 
+        (track_name, artist, length))
 
 conn.commit()
 conn.close()
@@ -166,7 +168,7 @@ cur.execute('''
     CREATE TABLE combined_tracks AS
     SELECT t.title, t.artist, t.playcount, t.genre, l.length_minutes
     FROM tracks t
-    JOIN track_lengths l ON t.artist = l.artist AND t.title = l.track_name
+    JOIN track_lengths l ON t.id = l.id
     ''')
 
 conn.commit()

@@ -1,688 +1,177 @@
 [
     {
-        "title": "EXILE (feat. Bon Iver)",
-        "artist": "Taylor Swift",
-        "playcount": 21607305,
-        "genre": "folk",
-        "length_minutes": 4.760566666666667
+        "title": "Here's Where the Story Ends",
+        "artist": "The Sundays",
+        "playcount": 4425144,
+        "genre": "indie",
+        "length_minutes": 3.91545
     },
     {
-        "title": "All Falls Down",
-        "artist": "Kanye West",
-        "playcount": 16109760,
-        "genre": "hip-hop",
-        "length_minutes": 3.7251
-    },
-    {
-        "title": "Yellow",
-        "artist": "Coldplay",
-        "playcount": 29386298,
-        "genre": "rock",
-        "length_minutes": 4.4462166666666665
-    },
-    {
-        "title": "read your mind",
-        "artist": "Sabrina Carpenter",
-        "playcount": 8817900,
+        "title": "Red Wine Supernova",
+        "artist": "Chappell Roan",
+        "playcount": 23077617,
         "genre": "pop",
-        "length_minutes": 3.46415
+        "length_minutes": 3.212
     },
     {
-        "title": "3005",
-        "artist": "Childish Gambino",
-        "playcount": 17126512,
-        "genre": "rap",
-        "length_minutes": 3.903583333333333
-    },
-    {
-        "title": "Best Time",
-        "artist": "Brent Faiyaz",
-        "playcount": 7961786,
-        "genre": "unknown",
-        "length_minutes": 1.3751333333333333
-    },
-    {
-        "title": "American Teenager",
-        "artist": "Ethel Cain",
-        "playcount": 11342445,
-        "genre": "pop",
-        "length_minutes": 4.306966666666667
-    },
-    {
-        "title": "Heartbeat",
-        "artist": "Childish Gambino",
-        "playcount": 14340440,
-        "genre": "hip-hop",
-        "length_minutes": 4.497333333333334
-    },
-    {
-        "title": "Chanel",
-        "artist": "Frank Ocean",
-        "playcount": 19785517,
-        "genre": "hip-hop",
-        "length_minutes": 3.50475
-    },
-    {
-        "title": "Again",
-        "artist": "Fetty Wap",
-        "playcount": 2760493,
-        "genre": "hip-hop",
-        "length_minutes": 5.204
-    },
-    {
-        "title": "Don't Stop Me Now - Remastered 2011",
-        "artist": "Queen",
-        "playcount": 9772020,
-        "genre": "rock",
-        "length_minutes": 3.4902166666666665
-    },
-    {
-        "title": "Chest Pain (I Love)",
-        "artist": "Malcolm Todd",
-        "playcount": 1942973,
-        "genre": "unknown",
-        "length_minutes": 3.3471
-    },
-    {
-        "title": "euphoria",
-        "artist": "Kendrick Lamar",
-        "playcount": 11906658,
-        "genre": "hip-hop",
-        "length_minutes": 6.393983333333333
-    },
-    {
-        "title": "Bad Romance",
+        "title": "Shadow Of a Man",
         "artist": "Lady Gaga",
-        "playcount": 27152108,
+        "playcount": 2429282,
         "genre": "pop",
-        "length_minutes": 4.90955
-    },
-    {
-        "title": "Hypnotize - 2014 Remaster",
-        "artist": "The Notorious B.I.G.",
-        "playcount": 5866194,
-        "genre": "rap",
-        "length_minutes": 3.830433333333333
-    },
-    {
-        "title": "dear god",
-        "artist": "Tate McRae",
-        "playcount": 2285480,
-        "genre": "pop",
-        "length_minutes": 2.850233333333333
-    },
-    {
-        "title": "Going Under",
-        "artist": "Evanescence",
-        "playcount": 10580941,
-        "genre": "rock",
-        "length_minutes": 3.5824333333333334
-    },
-    {
-        "title": "nuts",
-        "artist": "LIL PEEP",
-        "playcount": 10489301,
-        "genre": "rock",
-        "length_minutes": 1.4226666666666667
-    },
-    {
-        "title": "Need 2",
-        "artist": "Pinegrove",
-        "playcount": 13811438,
-        "genre": "country",
-        "length_minutes": 3.1966
-    },
-    {
-        "title": "TiK ToK",
-        "artist": "Kesha",
-        "playcount": 10868301,
-        "genre": "pop",
-        "length_minutes": 3.3282166666666666
-    },
-    {
-        "title": "Are We Still Friends?",
-        "artist": "Tyler, the Creator",
-        "playcount": 22436207,
-        "genre": "soul",
-        "length_minutes": 4.424666666666667
-    },
-    {
-        "title": "Couldn’t Make It Any Harder",
-        "artist": "Sabrina Carpenter",
-        "playcount": 1808380,
-        "genre": "pop",
-        "length_minutes": 2.9976166666666666
-    },
-    {
-        "title": "Heather",
-        "artist": "Conan Gray",
-        "playcount": 16692661,
-        "genre": "pop",
-        "length_minutes": 3.300666666666667
-    },
-    {
-        "title": "sLiDe (feat. frank ocean & MIGOS)",
-        "artist": "Calvin Harris",
-        "playcount": 9307977,
-        "genre": "pop",
-        "length_minutes": 3.8468833333333334
-    },
-    {
-        "title": "Heart to Heart",
-        "artist": "Mac DeMarco",
-        "playcount": 16544109,
-        "genre": "indie",
-        "length_minutes": 3.519
-    },
-    {
-        "title": "From The Start",
-        "artist": "Laufey",
-        "playcount": 17191138,
-        "genre": "jazz",
-        "length_minutes": 2.826216666666667
-    },
-    {
-        "title": "BEST INTEREST",
-        "artist": "Tyler, the Creator",
-        "playcount": 19922770,
-        "genre": "soul",
-        "length_minutes": 2.1320166666666664
-    },
-    {
-        "title": "Scott Street",
-        "artist": "Phoebe Bridgers",
-        "playcount": 14082654,
-        "genre": "indie",
-        "length_minutes": 5.083333333333333
-    },
-    {
-        "title": "Sharpest Tool",
-        "artist": "Sabrina Carpenter",
-        "playcount": 7424153,
-        "genre": "pop",
-        "length_minutes": 3.6380666666666666
-    },
-    {
-        "title": "Sex, Drugs, Etc.",
-        "artist": "Beach Weather",
-        "playcount": 13968337,
-        "genre": "indie",
-        "length_minutes": 3.279733333333333
-    },
-    {
-        "title": "She",
-        "artist": "Tyler, the Creator",
-        "playcount": 18804556,
-        "genre": "hip-hop",
-        "length_minutes": 4.2231
-    },
-    {
-        "title": "BOILED PEANUTS",
-        "artist": "Doechii",
-        "playcount": 2084377,
-        "genre": "rap",
-        "length_minutes": 2.0309666666666666
-    },
-    {
-        "title": "Champagne Coast",
-        "artist": "Blood Orange",
-        "playcount": 8701042,
-        "genre": "indie",
-        "length_minutes": 4.872883333333333
-    },
-    {
-        "title": "Money Trees",
-        "artist": "Kendrick Lamar",
-        "playcount": 27220693,
-        "genre": "rap",
-        "length_minutes": 6.448433333333333
-    },
-    {
-        "title": "New Jeans",
-        "artist": "NewJeans",
-        "playcount": 17726181,
-        "genre": "k-pop",
-        "length_minutes": 1.8164333333333333
-    },
-    {
-        "title": "Love Hangover (feat. Dominic Fike)",
-        "artist": "Jennie",
-        "playcount": 3784282,
-        "genre": "soul",
-        "length_minutes": 3.00215
-    },
-    {
-        "title": "ball w/o you",
-        "artist": "21 Savage",
-        "playcount": 12069403,
-        "genre": "pop",
-        "length_minutes": 3.250766666666667
-    },
-    {
-        "title": "NEW MAGIC WAND",
-        "artist": "Tyler, the Creator",
-        "playcount": 25402002,
-        "genre": "soul",
-        "length_minutes": 3.255333333333333
-    },
-    {
-        "title": "Rah Tah Tah",
-        "artist": "Tyler, the Creator",
-        "playcount": 7699900,
-        "genre": "funk",
-        "length_minutes": 2.756866666666667
-    },
-    {
-        "title": "Sugar, We're Goin Down",
-        "artist": "Fall Out Boy",
-        "playcount": 12320160,
-        "genre": "pop",
-        "length_minutes": 3.818216666666667
-    },
-    {
-        "title": "Since U Been Gone",
-        "artist": "Kelly Clarkson",
-        "playcount": 9863273,
-        "genre": "pop",
-        "length_minutes": 3.1493333333333333
-    },
-    {
-        "title": "Sorry",
-        "artist": "Justin Bieber",
-        "playcount": 9713459,
-        "genre": "pop",
-        "length_minutes": 3.346433333333333
-    },
-    {
-        "title": "Japanese Denim",
-        "artist": "Daniel Caesar",
-        "playcount": 11870776,
-        "genre": "hip-hop",
-        "length_minutes": 4.509266666666667
-    },
-    {
-        "title": "favorite crime",
-        "artist": "Olivia Rodrigo",
-        "playcount": 20656098,
-        "genre": "pop",
-        "length_minutes": 2.5444333333333335
-    },
-    {
-        "title": "Lost in the Fire (feat. The Weeknd)",
-        "artist": "Gesaffelstein",
-        "playcount": 11274427,
-        "genre": "electronic",
-        "length_minutes": 3.3682166666666666
-    },
-    {
-        "title": "Losing My Religion",
-        "artist": "R.E.M.",
-        "playcount": 17531565,
-        "genre": "rock",
-        "length_minutes": 4.473766666666666
-    },
-    {
-        "title": "DIE TRYING",
-        "artist": "PARTYNEXTDOOR",
-        "playcount": 1967745,
-        "genre": "indie",
-        "length_minutes": 3.2571833333333333
-    },
-    {
-        "title": "Love Me Not",
-        "artist": "Ravyn Lenae",
-        "playcount": 3983250,
-        "genre": "pop",
-        "length_minutes": 3.5577666666666667
-    },
-    {
-        "title": "don't wanna break up again",
-        "artist": "Ariana Grande",
-        "playcount": 9916146,
-        "genre": "pop",
-        "length_minutes": 2.9001
-    },
-    {
-        "title": "NEW WOMAN (feat. ROSALÍA)",
-        "artist": "Lisa",
-        "playcount": 8884803,
-        "genre": "pop",
-        "length_minutes": 2.9964833333333334
-    },
-    {
-        "title": "CRUSH",
-        "artist": "Playboi Carti",
-        "playcount": 791901,
-        "genre": "rap",
-        "length_minutes": 2.8886666666666665
-    },
-    {
-        "title": "Give Me Everything (feat. Nayer)",
-        "artist": "Pitbull",
-        "playcount": 3252700,
-        "genre": "unknown",
-        "length_minutes": 4.2051
-    },
-    {
-        "title": "iLLIcIt afFAiRS",
-        "artist": "Taylor Swift",
-        "playcount": 20869792,
-        "genre": "folk",
-        "length_minutes": 3.1816333333333335
-    },
-    {
-        "title": "pHysIcAL (fEAt. tRoYE sIvaN)",
-        "artist": "DUA LIPA",
-        "playcount": 291745,
-        "genre": "pop",
-        "length_minutes": 3.2133166666666666
-    },
-    {
-        "title": "365",
-        "artist": "Charli XCX",
-        "playcount": 15412216,
-        "genre": "techno",
-        "length_minutes": 3.3936333333333333
-    },
-    {
-        "title": "I Was Never There",
-        "artist": "The Weeknd",
-        "playcount": 11839249,
-        "genre": "soul",
-        "length_minutes": 4.017766666666667
-    },
-    {
-        "title": "VOY A LLeVARTE PA PR",
-        "artist": "Bad Bunny",
-        "playcount": 2976656,
-        "genre": "unknown",
-        "length_minutes": 2.6060666666666665
-    },
-    {
-        "title": "Family Ties (with Kendrick Lamar)",
-        "artist": "Baby Keem",
-        "playcount": 23152419,
-        "genre": "rap",
-        "length_minutes": 4.204366666666667
-    },
-    {
-        "title": "Toxic",
-        "artist": "Britney Spears",
-        "playcount": 21829999,
-        "genre": "pop",
-        "length_minutes": 3.3133333333333335
-    },
-    {
-        "title": "No One Noticed (Extended English)",
-        "artist": "The Marías",
-        "playcount": 1634749,
-        "genre": "pop",
-        "length_minutes": 4.7411
+        "length_minutes": 3.3287166666666668
     },
     {
         "title": "Don't Dream It's Over",
         "artist": "Crowded House",
-        "playcount": 8742956,
+        "playcount": 8765683,
         "genre": "pop",
         "length_minutes": 3.9488833333333333
     },
     {
-        "title": "Born Again (feat. Doja Cat & RAYE)",
-        "artist": "Lisa",
-        "playcount": 4717126,
+        "title": "Image",
+        "artist": "MAGDALENA BAY",
+        "playcount": 5126530,
         "genre": "pop",
-        "length_minutes": 3.8529
+        "length_minutes": 3.5477666666666665
     },
     {
-        "title": "360",
+        "title": "guess featuring billie eilish",
         "artist": "Charli XCX",
-        "playcount": 24841935,
-        "genre": "pop",
-        "length_minutes": 2.2300833333333334
+        "playcount": 19319437,
+        "genre": "house",
+        "length_minutes": 2.3888333333333334
     },
     {
-        "title": "Nobody",
-        "artist": "Mitski",
-        "playcount": 18687718,
-        "genre": "indie",
-        "length_minutes": 3.2238166666666666
-    },
-    {
-        "title": "I Bet on Losing Dogs",
-        "artist": "Mitski",
-        "playcount": 23630235,
-        "genre": "indie",
-        "length_minutes": 2.8373333333333335
-    },
-    {
-        "title": "APT.",
-        "artist": "Rosé",
-        "playcount": 18623260,
-        "genre": "pop",
-        "length_minutes": 2.83195
-    },
-    {
-        "title": "Falling Down - Bonus Track",
-        "artist": "LIL PEEP",
-        "playcount": 11312985,
-        "genre": "emo",
-        "length_minutes": 3.2733333333333334
-    },
-    {
-        "title": "The Adults Are Talking",
-        "artist": "The Strokes",
-        "playcount": 20328144,
-        "genre": "indie",
-        "length_minutes": 5.150883333333334
-    },
-    {
-        "title": "Can't Feel My Face",
-        "artist": "The Weeknd",
-        "playcount": 14780943,
-        "genre": "r&b",
-        "length_minutes": 3.558666666666667
-    },
-    {
-        "title": "Womanizer",
-        "artist": "Britney Spears",
-        "playcount": 14497120,
-        "genre": "pop",
-        "length_minutes": 3.74
-    },
-    {
-        "title": "Cinnamon Girl",
-        "artist": "Lana Del Rey",
-        "playcount": 21108685,
-        "genre": "pop",
-        "length_minutes": 5.011383333333334
-    },
-    {
-        "title": "Alright",
-        "artist": "Kendrick Lamar",
-        "playcount": 24610366,
-        "genre": "jazz",
-        "length_minutes": 3.65555
-    },
-    {
-        "title": "Under the Bridge",
-        "artist": "Red Hot Chili Peppers",
-        "playcount": 20176580,
+        "title": "The Scientist",
+        "artist": "Coldplay",
+        "playcount": 24353326,
         "genre": "rock",
-        "length_minutes": 4.4051
+        "length_minutes": 5.16
     },
     {
-        "title": "No One Noticed",
-        "artist": "The Marías",
-        "playcount": 14131436,
+        "title": "Hot n Cold",
+        "artist": "Katy Perry",
+        "playcount": 14604915,
         "genre": "pop",
-        "length_minutes": 3.9484333333333335
+        "length_minutes": 3.6704333333333334
     },
     {
-        "title": "undressed",
-        "artist": "Sombr",
-        "playcount": 671278,
+        "title": "Up From the Bottom",
+        "artist": "Linkin Park",
+        "playcount": 601194,
+        "genre": "electronic",
+        "length_minutes": 3.053716666666667
+    },
+    {
+        "title": "welcome and goodbye",
+        "artist": "Dream, Ivory",
+        "playcount": 9599869,
+        "genre": "indie",
+        "length_minutes": 2.34405
+    },
+    {
+        "title": "The Grudge",
+        "artist": "Olivia Rodrigo",
+        "playcount": 10455094,
+        "genre": "pop",
+        "length_minutes": 3.156433333333333
+    },
+    {
+        "title": "Under Pressure - Remastered 2011",
+        "artist": "Queen",
+        "playcount": 7353886,
+        "genre": "rock",
+        "length_minutes": 4.140666666666666
+    },
+    {
+        "title": "Bullet With Butterfly Wings - remastered 2012",
+        "artist": "The Smashing Pumpkins",
+        "playcount": 6426178,
+        "genre": "grunge",
+        "length_minutes": 4.307766666666667
+    },
+    {
+        "title": "Mask Off",
+        "artist": "Future",
+        "playcount": 9959615,
+        "genre": "hip-hop",
+        "length_minutes": 3.41
+    },
+    {
+        "title": "Glue Song (feat. Clairo)",
+        "artist": "beabadoobee",
+        "playcount": 7571975,
         "genre": "unknown",
-        "length_minutes": 3.0348
+        "length_minutes": 2.2511
     },
     {
-        "title": "No Surprises",
-        "artist": "Radiohead",
-        "playcount": 39218031,
-        "genre": "alternative",
-        "length_minutes": 3.8186666666666667
+        "title": "Terrapin",
+        "artist": "Clairo",
+        "playcount": 3524121,
+        "genre": "jazz",
+        "length_minutes": 3.0048166666666667
     },
     {
-        "title": "Anxiety",
-        "artist": "Doechii",
-        "playcount": 2104054,
-        "genre": "alternative",
-        "length_minutes": 4.155033333333333
-    },
-    {
-        "title": "Nothing's Gonna Hurt You Baby",
-        "artist": "Cigarettes After Sex",
-        "playcount": 9313874,
+        "title": "Call Me Maybe",
+        "artist": "Carly Rae Jepsen",
+        "playcount": 16324047,
         "genre": "pop",
-        "length_minutes": 4.77155
+        "length_minutes": 3.223333333333333
+    },
+    {
+        "title": "This Night Has Opened My Eyes - 2011 Remaster",
+        "artist": "The Smiths",
+        "playcount": 14704129,
+        "genre": "indie",
+        "length_minutes": 3.6922166666666665
+    },
+    {
+        "title": "Ignorance",
+        "artist": "Paramore",
+        "playcount": 12331242,
+        "genre": "alternative",
+        "length_minutes": 3.6437666666666666
+    },
+    {
+        "title": "i wish i hated you",
+        "artist": "Ariana Grande",
+        "playcount": 7096722,
+        "genre": "pop",
+        "length_minutes": 2.56055
+    },
+    {
+        "title": "Midnight City",
+        "artist": "M83",
+        "playcount": 20077031,
+        "genre": "electronic",
+        "length_minutes": 4.024
+    },
+    {
+        "title": "Take Me Out",
+        "artist": "Franz Ferdinand",
+        "playcount": 23952128,
+        "genre": "indie",
+        "length_minutes": 3.9504333333333332
+    },
+    {
+        "title": "Streets",
+        "artist": "Doja Cat",
+        "playcount": 17026770,
+        "genre": "unknown",
+        "length_minutes": 3.7831
     },
     {
         "title": "ss",
         "artist": "Ken Carson",
-        "playcount": 4971147,
+        "playcount": 4994960,
         "genre": "rap",
         "length_minutes": 3.0729166666666665
     },
     {
-        "title": "Pain",
-        "artist": "pinkpantheress",
-        "playcount": 26608269,
+        "title": "Naked in Manhattan",
+        "artist": "Chappell Roan",
+        "playcount": 10141075,
         "genre": "pop",
-        "length_minutes": 1.6424
-    },
-    {
-        "title": "peekaboo (feat. AzChike)",
-        "artist": "Kendrick Lamar",
-        "playcount": 4566105,
-        "genre": "unknown",
-        "length_minutes": 2.5986166666666666
-    },
-    {
-        "title": "Close to you",
-        "artist": "Gracie Abrams",
-        "playcount": 9276926,
-        "genre": "indie",
-        "length_minutes": 3.7662166666666668
-    },
-    {
-        "title": "Bad Idea Right?",
-        "artist": "Olivia Rodrigo",
-        "playcount": 19750711,
-        "genre": "pop",
-        "length_minutes": 3.0797166666666667
-    },
-    {
-        "title": "Diet Mountain Dew",
-        "artist": "Lana Del Rey",
-        "playcount": 20471145,
-        "genre": "indie",
-        "length_minutes": 3.715333333333333
-    },
-    {
-        "title": "Counting Stars",
-        "artist": "OneRepublic",
-        "playcount": 16562272,
-        "genre": "pop",
-        "length_minutes": 4.28775
-    },
-    {
-        "title": "How Soon Is Now? - 2011 Remaster",
-        "artist": "The Smiths",
-        "playcount": 7952241,
-        "genre": "indie",
-        "length_minutes": 6.802883333333333
-    },
-    {
-        "title": "Thnks fr th Mmrs",
-        "artist": "Fall Out Boy",
-        "playcount": 14485843,
-        "genre": "rock",
-        "length_minutes": 3.391766666666667
-    },
-    {
-        "title": "Fluorescent Adolescent",
-        "artist": "Arctic Monkeys",
-        "playcount": 26542373,
-        "genre": "indie",
-        "length_minutes": 2.89155
-    },
-    {
-        "title": "Brain Stew",
-        "artist": "Green Day",
-        "playcount": 7721679,
-        "genre": "rock",
-        "length_minutes": 3.216666666666667
-    },
-    {
-        "title": "Uptown Girl",
-        "artist": "Billy Joel",
-        "playcount": 8934617,
-        "genre": "pop",
-        "length_minutes": 3.2951
-    },
-    {
-        "title": "DtMF",
-        "artist": "Bad Bunny",
-        "playcount": 4946390,
-        "genre": "pop",
-        "length_minutes": 3.95195
-    },
-    {
-        "title": "Thank U, Next",
-        "artist": "Ariana Grande",
-        "playcount": 17534390,
-        "genre": "pop",
-        "length_minutes": 3.4553333333333334
-    },
-    {
-        "title": "Stressed Out",
-        "artist": "Twenty One Pilots",
-        "playcount": 15992449,
-        "genre": "indie",
-        "length_minutes": 3.3722166666666666
-    },
-    {
-        "title": "Die With A Smile",
-        "artist": "Lady Gaga",
-        "playcount": 21226196,
-        "genre": "pop",
-        "length_minutes": 4.19445
-    },
-    {
-        "title": "Sweet Life",
-        "artist": "Frank Ocean",
-        "playcount": 9822088,
-        "genre": "soul",
-        "length_minutes": 4.378
-    },
-    {
-        "title": "Dog Days Are Over",
-        "artist": "Florence + the Machine",
-        "playcount": 22424668,
-        "genre": "indie",
-        "length_minutes": 4.197333333333333
-    },
-    {
-        "title": "Breakin' Dishes",
-        "artist": "Rihanna",
-        "playcount": 8340550,
-        "genre": "pop",
-        "length_minutes": 3.3428833333333334
-    },
-    {
-        "title": "My Love (feat. T.I.)",
-        "artist": "Justin Timberlake",
-        "playcount": 4591010,
-        "genre": "pop",
-        "length_minutes": 4.602666666666667
+        "length_minutes": 3.5176166666666666
     }
 ]
