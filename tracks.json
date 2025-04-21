@@ -1,177 +1,352 @@
 [
     {
-        "title": "Here's Where the Story Ends",
-        "artist": "The Sundays",
-        "playcount": 4425144,
-        "genre": "indie",
-        "length_minutes": 3.91545
-    },
-    {
-        "title": "Red Wine Supernova",
-        "artist": "Chappell Roan",
-        "playcount": 23077617,
-        "genre": "pop",
-        "length_minutes": 3.212
-    },
-    {
-        "title": "Shadow Of a Man",
-        "artist": "Lady Gaga",
-        "playcount": 2429282,
-        "genre": "pop",
-        "length_minutes": 3.3287166666666668
-    },
-    {
-        "title": "Don't Dream It's Over",
-        "artist": "Crowded House",
-        "playcount": 8765683,
-        "genre": "pop",
-        "length_minutes": 3.9488833333333333
-    },
-    {
-        "title": "Image",
-        "artist": "MAGDALENA BAY",
-        "playcount": 5126530,
-        "genre": "pop",
-        "length_minutes": 3.5477666666666665
-    },
-    {
-        "title": "guess featuring billie eilish",
-        "artist": "Charli XCX",
-        "playcount": 19319437,
-        "genre": "house",
-        "length_minutes": 2.3888333333333334
-    },
-    {
-        "title": "The Scientist",
-        "artist": "Coldplay",
-        "playcount": 24353326,
-        "genre": "rock",
-        "length_minutes": 5.16
-    },
-    {
-        "title": "Hot n Cold",
-        "artist": "Katy Perry",
-        "playcount": 14604915,
-        "genre": "pop",
-        "length_minutes": 3.6704333333333334
-    },
-    {
-        "title": "Up From the Bottom",
-        "artist": "Linkin Park",
-        "playcount": 601194,
+        "title": "Rather Be (feat. Jess Glynne)",
+        "artist": "Clean Bandit",
+        "playcount": 10023720,
         "genre": "electronic",
-        "length_minutes": 3.053716666666667
+        "length_minutes": 3.7972166666666665
     },
     {
-        "title": "welcome and goodbye",
-        "artist": "Dream, Ivory",
-        "playcount": 9599869,
+        "title": "How You Remind Me",
+        "artist": "Nickelback",
+        "playcount": 12719141,
+        "genre": "rock",
+        "length_minutes": 3.7306666666666666
+    },
+    {
+        "title": "Teenagers",
+        "artist": "My Chemical Romance",
+        "playcount": 19503884,
+        "genre": "rock",
+        "length_minutes": 2.6986666666666665
+    },
+    {
+        "title": "Drew Barrymore",
+        "artist": "SZA",
+        "playcount": 12899468,
+        "genre": "alternative",
+        "length_minutes": 3.8566666666666665
+    },
+    {
+        "title": "Like Weezy",
+        "artist": "Playboi Carti",
+        "playcount": 3295129,
+        "genre": "pop",
+        "length_minutes": 1.9266666666666667
+    },
+    {
+        "title": "Faint",
+        "artist": "Linkin Park",
+        "playcount": 19705809,
+        "genre": "rock",
+        "length_minutes": 2.701766666666667
+    },
+    {
+        "title": "Californication",
+        "artist": "Red Hot Chili Peppers",
+        "playcount": 22122382,
+        "genre": "rock",
+        "length_minutes": 5.49555
+    },
+    {
+        "title": "carDIGan",
+        "artist": "Taylor Swift",
+        "playcount": 37173098,
+        "genre": "pop",
+        "length_minutes": 3.9926666666666666
+    },
+    {
+        "title": "Florida!!! (feat. Florence + the Machine)",
+        "artist": "Taylor Swift",
+        "playcount": 10099722,
+        "genre": "pop",
+        "length_minutes": 3.59105
+    },
+    {
+        "title": "Juna",
+        "artist": "Clairo",
+        "playcount": 12378938,
+        "genre": "soul",
+        "length_minutes": 3.2518166666666666
+    },
+    {
+        "title": "National Anthem",
+        "artist": "Lana Del Rey",
+        "playcount": 19573741,
         "genre": "indie",
-        "length_minutes": 2.34405
+        "length_minutes": 3.842216666666667
+    },
+    {
+        "title": "WUSYANAME (feat. Youngboy Never Broke Again & Ty Dolla $ign)",
+        "artist": "Tyler, the Creator",
+        "playcount": 17321344,
+        "genre": "soul",
+        "length_minutes": 2.0262
+    },
+    {
+        "title": "DIS 1 GOT IT",
+        "artist": "Playboi Carti",
+        "playcount": 1479328,
+        "genre": "hip-hop",
+        "length_minutes": 2.0645
+    },
+    {
+        "title": "yes, and?",
+        "artist": "Ariana Grande",
+        "playcount": 20939853,
+        "genre": "house",
+        "length_minutes": 3.5832333333333333
+    },
+    {
+        "title": "TRIM (with Future)",
+        "artist": "Playboi Carti",
+        "playcount": 1305618,
+        "genre": "hip-hop",
+        "length_minutes": 3.2257666666666664
+    },
+    {
+        "title": "Last Friday Night (T.G.I.F.)",
+        "artist": "Katy Perry",
+        "playcount": 15951726,
+        "genre": "pop",
+        "length_minutes": 3.84555
+    },
+    {
+        "title": "Don’t Smile",
+        "artist": "Sabrina Carpenter",
+        "playcount": 7350430,
+        "genre": "pop",
+        "length_minutes": 3.43825
+    },
+    {
+        "title": "Homecoming",
+        "artist": "Kanye West",
+        "playcount": 15719966,
+        "genre": "hip-hop",
+        "length_minutes": 3.39155
+    },
+    {
+        "title": "LOVE. FEAT. ZACARI.",
+        "artist": "Kendrick Lamar",
+        "playcount": 19759565,
+        "genre": "pop",
+        "length_minutes": 3.5566666666666666
+    },
+    {
+        "title": "Wicked Game",
+        "artist": "Chris Isaak",
+        "playcount": 11926383,
+        "genre": "rock",
+        "length_minutes": 4.8177666666666665
+    },
+    {
+        "title": "Night Changes",
+        "artist": "One Direction",
+        "playcount": 10970430,
+        "genre": "pop",
+        "length_minutes": 3.776666666666667
+    },
+    {
+        "title": "GONE, GONE / THANK YOU",
+        "artist": "Tyler, the Creator",
+        "playcount": 17790268,
+        "genre": "pop",
+        "length_minutes": 6.256433333333334
+    },
+    {
+        "title": "all-american bitch",
+        "artist": "Olivia Rodrigo",
+        "playcount": 16651873,
+        "genre": "pop",
+        "length_minutes": 2.7638833333333332
+    },
+    {
+        "title": "Lying from You",
+        "artist": "Linkin Park",
+        "playcount": 10406899,
+        "genre": "metal",
+        "length_minutes": 2.91755
+    },
+    {
+        "title": "LOYALTY. FEAT. RIHANNA.",
+        "artist": "Kendrick Lamar",
+        "playcount": 12246925,
+        "genre": "hip-hop",
+        "length_minutes": 3.7893333333333334
+    },
+    {
+        "title": "Salvatore",
+        "artist": "Lana Del Rey",
+        "playcount": 8860475,
+        "genre": "alternative",
+        "length_minutes": 4.158566666666666
+    },
+    {
+        "title": "Say Yes To Heaven",
+        "artist": "Lana Del Rey",
+        "playcount": 12748358,
+        "genre": "alternative",
+        "length_minutes": 3.1966
+    },
+    {
+        "title": "Instant Crush (feat. Julian Casablancas)",
+        "artist": "Daft Punk",
+        "playcount": 14471259,
+        "genre": "electronic",
+        "length_minutes": 3.7088833333333335
+    },
+    {
+        "title": "King Kunta",
+        "artist": "Kendrick Lamar",
+        "playcount": 16051352,
+        "genre": "hip-hop",
+        "length_minutes": 4.770883333333333
+    },
+    {
+        "title": "Notion",
+        "artist": "The Rare Occasions",
+        "playcount": 9263614,
+        "genre": "indie",
+        "length_minutes": 3.1160666666666668
+    },
+    {
+        "title": "Paper Planes",
+        "artist": "M.I.A.",
+        "playcount": 18901465,
+        "genre": "hip-hop",
+        "length_minutes": 5.819766666666666
+    },
+    {
+        "title": "Gimme More",
+        "artist": "Britney Spears",
+        "playcount": 17047226,
+        "genre": "pop",
+        "length_minutes": 3.8226666666666667
+    },
+    {
+        "title": "not a lot, just forever",
+        "artist": "AdriAnne Lenker",
+        "playcount": 7943597,
+        "genre": "folk",
+        "length_minutes": 3.16755
+    },
+    {
+        "title": "You Get Me So High",
+        "artist": "The Neighbourhood",
+        "playcount": 17461923,
+        "genre": "alternative",
+        "length_minutes": 3.582883333333333
+    },
+    {
+        "title": "Dark Thoughts",
+        "artist": "Lil Tecca",
+        "playcount": 2465890,
+        "genre": "unknown",
+        "length_minutes": 2.808333333333333
     },
     {
         "title": "The Grudge",
         "artist": "Olivia Rodrigo",
-        "playcount": 10455094,
+        "playcount": 10500929,
         "genre": "pop",
-        "length_minutes": 3.156433333333333
+        "length_minutes": 4.982216666666667
     },
     {
-        "title": "Under Pressure - Remastered 2011",
-        "artist": "Queen",
-        "playcount": 7353886,
+        "title": "Everywhere - 2017 Remaster",
+        "artist": "Fleetwood Mac",
+        "playcount": 7149069,
         "genre": "rock",
-        "length_minutes": 4.140666666666666
+        "length_minutes": 3.108
     },
     {
-        "title": "Bullet With Butterfly Wings - remastered 2012",
-        "artist": "The Smashing Pumpkins",
-        "playcount": 6426178,
-        "genre": "grunge",
-        "length_minutes": 4.307766666666667
+        "title": "Treehouse",
+        "artist": "Alex G",
+        "playcount": 7717288,
+        "genre": "unknown",
+        "length_minutes": 3.9046666666666665
     },
     {
-        "title": "Mask Off",
-        "artist": "Future",
-        "playcount": 9959615,
+        "title": "Solo",
+        "artist": "Frank Ocean",
+        "playcount": 14318936,
+        "genre": "pop",
+        "length_minutes": 3.0451
+    },
+    {
+        "title": "Sarah",
+        "artist": "Alex G",
+        "playcount": 14525451,
+        "genre": "indie",
+        "length_minutes": 2.546
+    },
+    {
+        "title": "Risk",
+        "artist": "Gracie Abrams",
+        "playcount": 8720358,
+        "genre": "indie",
+        "length_minutes": 4.4051
+    },
+    {
+        "title": "Paparazzi",
+        "artist": "Lady Gaga",
+        "playcount": 21647710,
+        "genre": "pop",
+        "length_minutes": 3.71355
+    },
+    {
+        "title": "Aerials",
+        "artist": "System of a Down",
+        "playcount": 15848177,
+        "genre": "metal",
+        "length_minutes": 3.34355
+    },
+    {
+        "title": "OPM BABI",
+        "artist": "Playboi Carti",
+        "playcount": 2264297,
         "genre": "hip-hop",
-        "length_minutes": 3.41
+        "length_minutes": 3.6334
     },
     {
-        "title": "Glue Song (feat. Clairo)",
-        "artist": "beabadoobee",
-        "playcount": 7571975,
-        "genre": "unknown",
-        "length_minutes": 2.2511
+        "title": "Please Please Please Let Me Get What I Want - 2005 Remaster",
+        "artist": "Deftones",
+        "playcount": 11291946,
+        "genre": "rock",
+        "length_minutes": 3.206
     },
     {
-        "title": "Terrapin",
-        "artist": "Clairo",
-        "playcount": 3524121,
-        "genre": "jazz",
-        "length_minutes": 3.0048166666666667
-    },
-    {
-        "title": "Call Me Maybe",
-        "artist": "Carly Rae Jepsen",
-        "playcount": 16324047,
-        "genre": "pop",
-        "length_minutes": 3.223333333333333
-    },
-    {
-        "title": "This Night Has Opened My Eyes - 2011 Remaster",
-        "artist": "The Smiths",
-        "playcount": 14704129,
-        "genre": "indie",
-        "length_minutes": 3.6922166666666665
-    },
-    {
-        "title": "Ignorance",
-        "artist": "Paramore",
-        "playcount": 12331242,
+        "title": "Dirty Harry",
+        "artist": "Gorillaz",
+        "playcount": 10484895,
         "genre": "alternative",
-        "length_minutes": 3.6437666666666666
+        "length_minutes": 5.812666666666667
     },
     {
-        "title": "i wish i hated you",
-        "artist": "Ariana Grande",
-        "playcount": 7096722,
+        "title": "Use Somebody",
+        "artist": "Kings of Leon",
+        "playcount": 17782839,
+        "genre": "rock",
+        "length_minutes": 3.3448333333333333
+    },
+    {
+        "title": "Die For You",
+        "artist": "The Weeknd",
+        "playcount": 26110085,
         "genre": "pop",
-        "length_minutes": 2.56055
+        "length_minutes": 3.5477666666666665
     },
     {
-        "title": "Midnight City",
-        "artist": "M83",
-        "playcount": 20077031,
-        "genre": "electronic",
-        "length_minutes": 4.024
+        "title": "4EVER",
+        "artist": "Clairo",
+        "playcount": 12042033,
+        "genre": "alternative",
+        "length_minutes": 3.4046666666666665
     },
     {
-        "title": "Take Me Out",
-        "artist": "Franz Ferdinand",
-        "playcount": 23952128,
-        "genre": "indie",
-        "length_minutes": 3.9504333333333332
-    },
-    {
-        "title": "Streets",
-        "artist": "Doja Cat",
-        "playcount": 17026770,
-        "genre": "unknown",
-        "length_minutes": 3.7831
-    },
-    {
-        "title": "ss",
-        "artist": "Ken Carson",
-        "playcount": 4994960,
-        "genre": "rap",
-        "length_minutes": 3.0729166666666665
-    },
-    {
-        "title": "Naked in Manhattan",
-        "artist": "Chappell Roan",
-        "playcount": 10141075,
+        "title": "Perfect Places",
+        "artist": "Lorde",
+        "playcount": 12881363,
         "genre": "pop",
-        "length_minutes": 3.5176166666666666
+        "length_minutes": 2.3888333333333334
     }
 ]

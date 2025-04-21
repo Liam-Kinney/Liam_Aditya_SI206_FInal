@@ -51,6 +51,7 @@ def get_tracks_from_page(page):  #gets tracks from a specific page in the api
         track_name = track["name"]
         track_list.append((artist_name, track_name))
 
+
     return track_list
 
 def get_top_1050_tracks(): ##calls the function above to read several pages until getting to 1050 tracks
@@ -119,20 +120,31 @@ cur.execute('''
         artist TEXT,
         playcount INTEGER,
         genre TEXT,
+        artist_id INTEGER,
         CONSTRAINT unique_track UNIQUE(title, artist)
-        )
+    )
 ''')
 
 num_inserted = 0
-
-for artist, track in track_list: ##Looping to add tracks to the database
-    if num_inserted >= 25: ##limits the data base additions to 25 elements
+for artist, track in track_list:
+    if num_inserted >= 25:  # Still limit to 25 tracks
         break
     info = get_track_info(artist, track)
     if info:
         cur.execute("INSERT OR IGNORE INTO tracks (title, artist, playcount, genre) VALUES (?, ?, ?, ?)", info)
         if cur.rowcount > 0:
             num_inserted += 1
+
+# Now update artist_ids using a subquery to generate sequential IDs
+cur.execute('''
+    UPDATE tracks
+    SET artist_id = (
+        SELECT COUNT(DISTINCT t2.artist) 
+        FROM tracks t2 
+        WHERE t2.artist <= tracks.artist
+    )
+    WHERE artist_id IS NULL
+''')
 
 conn.commit()
 conn.close()
