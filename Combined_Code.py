@@ -113,6 +113,9 @@ track_length_tuple_list = search_100_track_lengths(track_list)
 conn = sqlite3.connect("tracks.db")
 cur = conn.cursor()
 
+'''# Drop and recreate the table to ensure it has the correct structure
+cur.execute('DROP TABLE IF EXISTS tracks')'''
+
 cur.execute('''
     CREATE TABLE IF NOT EXISTS tracks(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -121,6 +124,7 @@ cur.execute('''
         playcount INTEGER,
         genre TEXT,
         artist_id INTEGER,
+        genre_id INTEGER,
         CONSTRAINT unique_track UNIQUE(title, artist)
     )
 ''')
@@ -144,6 +148,17 @@ cur.execute('''
         WHERE t2.artist <= tracks.artist
     )
     WHERE artist_id IS NULL
+''')
+
+# Update genre_ids using a similar subquery
+cur.execute('''
+    UPDATE tracks
+    SET genre_id = (
+        SELECT COUNT(DISTINCT t2.genre) 
+        FROM tracks t2 
+        WHERE t2.genre <= tracks.genre
+    )
+    WHERE genre_id IS NULL
 ''')
 
 conn.commit()
@@ -178,9 +193,9 @@ cur.execute('Drop TABLE IF EXISTS combined_tracks')
 
 cur.execute('''
     CREATE TABLE combined_tracks AS
-    SELECT t.title, t.artist, t.playcount, t.genre, l.length_minutes
+    SELECT t.title, t.artist, t.playcount, t.genre, l.length_minutes, t.artist_id, t.genre_id
     FROM tracks t
-    JOIN track_lengths l ON t.id = l.id
+    JOIN track_lengths l ON t.title = l.title AND t.artist = l.artist
     ''')
 
 conn.commit()
